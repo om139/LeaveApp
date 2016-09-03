@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+</head>
+<body>
+   <form name="frm1" method="post" ng-controller="feedBackController" ng-app="leaveApp">
+
+      <div class="container">
+       <div class="space-bot text-center">
+           <h1 style="color: green;">Feedback Form</h1>
+       </div><br />
+       <div class="space-top text-center">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <label>Name</span></label> &nbsp; &nbsp;
+           <input name="textBox1" ng-model="textBox1" class="validate" formnovalidate required style="width: 200px;">
+           <span style="color:red" ng-show="frm1.textBox1.$touched && frm1.textBox1.$invalid">PLease Input Your Name</span>
+       </div><br />
+
+       <div class="space-top text-center">
+           &nbsp;&nbsp;&nbsp;
+           <label>Employee Id</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input name="textBox2" ng-model="textBox2" class="validate" formnovalidate required style="width: 200px;">
+           <span style="color:red" ng-show="frm1.textBox1.$touched && frm1.textBox1.$invalid">Please input your Employee Id</span>
+       </div><br />
+
+       <div class="space-top text-center">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <label>Subject</label> &nbsp; &nbsp;&nbsp;&nbsp;
+           <textarea name="textarea1" required style="width: 200px; height: 30px"></textarea>
+           <span style="color:red" ng-show="frm1.textarea1.$touched && frm1.textarea1.$invalid">Choose a subject</span>
+       </div><br />
+
+          <div class="space-top text-center">
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Description</label> &nbsp;&nbsp;&nbsp;&nbsp;
+              <textarea name="textarea2" required style="width: 200px; height: 50px"></textarea>
+              <span style="color:red" ng-show="frm1.textarea2.$touched && frm1.textarea2.$invalid">Describe Issues</span>
+          </div><br />
+
+
+       <div class="space-top text-center">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="waves-effect waves-light btn done">
+               <i>Submit</i>
+           </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button type="button" class="waves-effect waves-light btn cancel">
+               <i>clear</i>
+           </button><br />
+
+       </div>
+   </form>
+</body>
+</html>

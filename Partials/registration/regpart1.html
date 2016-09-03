@@ -1,0 +1,81 @@
+
+<head>
+    <link rel="stylesheet" src="Design/signUp">  
+</head>
+   <body ng-controller="regpart1Controller" ng-app="leaveApp">
+   <div class="container">
+       <div id="signUp">
+           <div class="signUp-screen">
+               <div class="space-bot text-center">
+                   <h1 style="color: darkgreen;">Register Your Self</h1>
+               </div><br />
+               <form class="form-register" method="post" name="register" novalidate class="jumbotron">
+                  <div class="space-top text-center">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>Name</label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input name="textBox1" ng-model="textBox1" class="validate" formnovalidate required style="width: 200px;">
+                   <span style="color:red" ng-show="register.textBox1.$touched && register.textBox1.$invalid">PLease Input Your Name</span>
+                  </div><br />
+
+                   <div class="space-top text-center">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <label>Email Id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input id="email1" type="email" name="email" ng-model="email" class="validate" formnovalidate required style="width: 200px;">
+                       <span style="color:red" ng-show="register.email.$dirty && register.email.$invalid">
+                                <span ng-show="register.email.$error.required">Email is required.</span>
+                                <span ng-show="register.email.$error.email">Invalid email address.</span>
+                       </span>
+
+                   </div><br />
+
+                   <div class="space-top text-center">
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <label for="password">Password</label>&nbsp;&nbsp;
+                       <input id="password" type="password" name="password" ng-model="password" ng-minlength='6' ng-maxlength="20" class="validate" required style="width: 200px;">
+                   </div><br />
+
+                   <div class="space-top text-center">
+                       <label for="password">Re-Enter Password</label>
+                       <input type="password" name="password" ng-model="password" ng-minlength='6' ng-maxlength="20" class="validate" required style="width: 200px;">
+                   </div><br />
+
+                   <div class="space-top text-center">
+                   <label>Gender</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="radio" name="radio1">Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="radio" name="radio1">Female
+                   </div><br />
+
+                   <div class="space-top text-center">
+                   <label>Date of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="date" name="dt1" class="validate" ng-model="dt1" required style="width: 200px;">
+                   </div><br />
+
+                   <div class="space-top text-center">
+                   <label>Date of Joining</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input type="date" name="dt2" class="validate" ng-model="dt2" required style="width: 200px;">
+                   </div><br />
+
+                   <div class="space-top text-center">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <button type="submit" class="waves-effect waves-light btn done">
+                       <i>Register</i>
+                   </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <button type="clear" class="waves-effect waves-light btn cancel">
+                           <i>clear</i>
+                       </button><br /><br />
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       Have You an Account?<a href="#/signIn">Login</a>
+                   </div><br />
+               </form>
+           </div>
+       </div>
+   </div>
+   </body>
+<style>
+    input.ng-invalid {
+        background-color:pink;
+    }
+    input.ng-valid {
+        background-color:lightgreen;
+    }
+</style>

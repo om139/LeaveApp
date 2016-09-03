@@ -1,0 +1,20 @@
+body{
+     background-color: aqua;
+     background-image: url('images1/5.jpg');
+}
+#images{
+    background-color: black;
+}
+#slide{
+    heght:700px;
+    width:60%;
+    margin:150px 0px 20px 250px ;
+    padding:10px 0px 300px 0px ;
+    border: dotted white 2px;
+    position: relative;
+    animation: myfirst 30s;
+    animation-iteration-count: infinite;
+    background-size: 100% auto;
+
+}
+

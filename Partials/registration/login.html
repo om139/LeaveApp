@@ -1,0 +1,35 @@
+<head>
+    <link src="Design/signIn.css">
+</head>
+<body ng-controller="signInController" ng-app="leaveApp">
+<div class="container">
+    <div id="signIn">
+        <div class="signIn-screen">
+            <div class="space-bot text-center">
+                <h1 style="color: green;">Sign In</h1>
+            </div><br />
+            <form class="form-register" method="post" name="register" novalidate class="jumbotron">
+
+                <div class="space-top text-center">
+                    <label for="email">Email Id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="email" type="email" name="email" ng-model="email" class="validate" required><br />
+
+                </div><br />
+                <div class="space-top text-center">
+                    <label for="password">Password</label>&nbsp;&nbsp;<input id="password" type="password" name="password" ng-model="password" ng-minlength='6' class="validate" required>
+                </div><br />
+                <div class="space-top text-center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="waves-effect waves-light btn done">
+                        <i>Login</i>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="waves-effect waves-light btn cancel">
+                        <i>clear</i>
+                    </button><br /><br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Don't Have Account?<a href="#/regpart1">Register YourSelf</a>
+
+                </div><br />
+            </form>
+        </div>
+    </div>
+</div>
+</body>
