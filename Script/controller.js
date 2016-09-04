@@ -25,6 +25,9 @@ app.controller('formController',function ($scope) {
 app.controller('signInController',function ($scope) {
 
 });
+app.controller('innerDesignController',function ($scope,$routeParams) {
+
+});
 
 app.controller('regpart1Controller',function ($scope) {
 
