@@ -23,14 +23,13 @@ app.config(function ($routeProvider) {
         .when('/regpart1',{
             templateUrl:'/angularProject/Partials/registration/regpart1.html',
             controller:'regpart1Controller'
-        }
-            .when('/innerDesign',{
-                templateUrl:'/angularProject/Partials/afterRegistration/innerDesign.html',
-                controller:'innerDesignController'
-            })
-
+        })
+        .when('/innerDesign',{
+            templateUrl:'/angularProject/Partials/afterRegistration/innerDesign.html',
+            controller:'innerDesignController'
+        })
         .otherwise({
-            templateUrl:'/angularProject/Partials/contactUs.html',
-            controller:'contactUsController'
+            templateUrl:'/angularProject/Partials/afterRegistration/innerDesign.html',
+            controller:'innerDesignController'
         });
 });
