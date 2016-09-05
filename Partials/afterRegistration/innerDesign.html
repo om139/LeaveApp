@@ -5,9 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<div style="float: left;">
+<div>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div class="btn-group-vertical" role="group" aria-label="...">
+<div class="btn-group-vertical" role="group" aria-label="..." style="border: 0px solid white; width: 200px;">
     <ul class="navbar nav nav-pills nav-stacked">
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leave</a>
             <ul class="dropdown-menu">
@@ -42,12 +42,28 @@
             </ul>
         </li><br />
     </ul>
-</div>
-<div>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div style="float: right;" ng-app="innerDesignApp">
+    <div ng-controller="innerDesignController"><br /><br /><br />
     <label>Name</label>
-    <input type="text">
-
+        <label ng-model="empInformation.Name"></label><br /><br />
+    <label>Email</label>
+        <label ng-model="empInformation.email"></label><br /><br />
+    <label>Gender</label>
+        <label ng-model="empInformation.Gender"></label><br /><br />
+    <label>Date of Birth</label>
+        <label ng-model="empInformation.dob"></label><br /><br />
+    <label>Date of Joining</label>
+        <label ng-model="empInformation.doj"></label><br /><br />
+        <label>Current Address</label>
+        <label ng-model="empInformation.doj"></label><br /><br />
+        <label>correspondence Address</label>
+        <label ng-model="empInformation.doj"></label><br /><br />
+    </div>
 </div>
+    <div class="img img-thumbnail" style="float: right; width: 100px;">
+        <img src="angularProject/Design/images1/download.jpg">
+    </div>
 </div>
 </body>
 </html>

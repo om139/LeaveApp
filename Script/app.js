@@ -33,3 +33,4 @@ app.config(function ($routeProvider) {
             controller:'innerDesignController'
         });
 });
+var app1 = angular.module('innerDesignApp', []);
