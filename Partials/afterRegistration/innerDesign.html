@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="script.js"></script>
+
 </head>
 <body>
 <div>
@@ -12,7 +15,7 @@
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leave</a>
             <ul class="dropdown-menu">
                 <li><a href="#">Raise Leave</a></li>
-                <li><a href="#">Raise Leave</a></li>
+                <li><a href="#">Request Leave</a></li>
             </ul>
         </li><br />
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Attendance<span class="caret"></span></a>
@@ -43,7 +46,18 @@
         </li><br />
     </ul>
 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div style="float: right;" ng-app="innerDesignApp">
+<div ng-app="docsRestrictDirective" style="float: right; width: 200px">
+    <div ng-controller="Controller">
+        <div empDetail></div>
+    </div>
+</div>
+
+    <div ng-app="app1">
+        <div ng-controller="innerDesignController">
+            <div empDetail></div>
+        </div>
+    </div>
+<!--div style="float: right;" ng-app="innerDesignApp">
     <div ng-controller="innerDesignController"><br /><br /><br />
     <label>Name</label>
         <label ng-model="empInformation.Name"></label><br /><br />
@@ -64,6 +78,8 @@
     <div class="img img-thumbnail" style="float: right; width: 100px;">
         <img src="angularProject/Design/images1/download.jpg">
     </div>
+</div-->
+
 </div>
 </body>
 </html>
