@@ -1,0 +1,37 @@
+<!--div ng-app="empDetail">
+    <div ng-controller="infoController">
+        <table>
+            <thead>
+            <tr>
+                <th> Name</th>
+                <th>Id</th>
+                <th>Code</th>
+                <th>Gender</th>
+                <th>Date Of Birth</th>
+                <th>Date of Joining</th>
+                <th>Email</th>
+                <th>Permanent Address</th>
+                <th>Correspondance Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="detail in empDetails | orderBy:stuRollNo">
+                <td ng-bind="detail.name"></td>
+                <td ng-bind="detail.code"></td>
+                <td ng-bind="detail.gender"></td>
+                <td ng-bind="detail.dob"></td>
+                <td ng-bind="detail.doj"></td>
+                <td ng-bind="detail.name"></td>
+                <td ng-bind="detail.email"></td>
+                <td ng-bind="detail.pAddress"></td>
+                <td ng-bind="detail.cAddress"></td>
+                <td>
+                    <input type="text" name="txt" ng-model="detail.stuAttendance"/>
+                    <span ng-if="(detail.stuAttendance =='P' || detail.stuAttendance =='p')" style="background-color: green;">&nbsp;</span>
+                    <span ng-if="(detail.stuAttendance =='A')" style="background-color: red;">&nbsp;</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>-->

@@ -1,7 +1,8 @@
 body{
      background-color: aqua;
      background-image: url('images1/5.jpg');
-    opacity: 0.9;
+    opacity: 1;
+    background-repeat: no-repeat;
 
 }
 #images{

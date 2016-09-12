@@ -1,85 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="script.js"></script>
-
-</head>
-<body>
 <div>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <div class="btn-group-vertical" role="group" aria-label="..." style="border: 0px solid white; width: 200px;">
     <ul class="navbar nav nav-pills nav-stacked">
-        <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leave</a>
+        <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Leave
+        <span class="caret"></span>
+        </a>
             <ul class="dropdown-menu">
-                <li><a href="#">Raise Leave</a></li>
-                <li><a href="#">Request Leave</a></li>
+                <li><a href="#/leaveRaise">Raise Leave</a></li>
+                <li><a href="#/requestLeave">Request Leave</a></li>
             </ul>
         </li><br />
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Attendance<span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li role="presentation" class="active"><a href="#">Punch Attendance</a></li>
-            <li role="presentation" class="active"><a href="#">View Attendance</a></li>
-            <li role="presentation" class="active"><a href="#">Holiday</a></li>
+            <li role="presentation"><a href="#/punchAttendance">Punch Attendance</a></li>
+            <li role="presentation"><a href="#/viewAttendance">View Attendance</a></li>
+            <li role="presentation"><a href="#/holiday">Holiday</a></li>
         </ul>
         </li><br />
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Utility<span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li role="presentation" class="active"><a href="#">Leave Summary</a></li>
-                <li role="presentation" class="active"><a href="#">Attendance Summary</a></li>
+                <li role="presentation"><a href="#/leaveSummary">Leave Summary</a></li>
+                <li role="presentation"><a href="#/attendanceSummary">Attendance Summary</a></li>
             </ul>
         </li><br />
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Notification<span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li role="presentation" class="active"><a href="#">Leave Action Notification</a></li>
-                <li role="presentation" class="active"><a href="#">Missed Attendance Notification</a></li>
+                <li role="presentation"><a href="#/leaveActionNotification">Leave Action Notification</a></li>
+                <li role="presentation"><a href="#/missedAttendanceNotification">Missed Attendance Notification</a></li>
             </ul>
         </li><br />
         <li role="presentation" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Employee<span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li role="presentation" class="active"><a href="#">My Team</a></li>
-                <li role="presentation" class="active"><a href="#">My Profile</a></li>
-                <li role="presentation" class="active"><a href="#">Employee Profile</a></li>
+                <li role="presentation"><a href="#/myTeam">My Team</a></li>
+                <li role="presentation"><a href="#/myProfile">My Profile</a></li>
+                <li role="presentation"><a href="#/employeeProfile">Employee Profile</a></li>
             </ul>
         </li><br />
     </ul>
-</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div ng-app="docsRestrictDirective" style="float: right; width: 200px">
-    <div ng-controller="Controller">
-        <div empDetail></div>
-    </div>
 </div>
-
-    <div ng-app="app1">
-        <div ng-controller="innerDesignController">
-            <div empDetail></div>
-        </div>
-    </div>
-<!--div style="float: right;" ng-app="innerDesignApp">
-    <div ng-controller="innerDesignController"><br /><br /><br />
-    <label>Name</label>
-        <label ng-model="empInformation.Name"></label><br /><br />
-    <label>Email</label>
-        <label ng-model="empInformation.email"></label><br /><br />
-    <label>Gender</label>
-        <label ng-model="empInformation.Gender"></label><br /><br />
-    <label>Date of Birth</label>
-        <label ng-model="empInformation.dob"></label><br /><br />
-    <label>Date of Joining</label>
-        <label ng-model="empInformation.doj"></label><br /><br />
-        <label>Current Address</label>
-        <label ng-model="empInformation.doj"></label><br /><br />
-        <label>correspondence Address</label>
-        <label ng-model="empInformation.doj"></label><br /><br />
-    </div>
+    <!--div ng-controller = "StudentController" style="float: right;">
+       <basic-information name="Rahul"></basic-information>
+    </div>-->
 </div>
-    <div class="img img-thumbnail" style="float: right; width: 100px;">
-        <img src="angularProject/Design/images1/download.jpg">
-    </div>
-</div-->
-
-</div>
-</body>
-</html>
